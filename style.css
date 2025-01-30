@@ -394,4 +394,11 @@ footer {
     font-size: 1.2rem; /* Tamanho do texto */
     color: #555; /* Cor do texto */
 }
+#mensagem-motivacional {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    padding: 40px 20px; /* Adiciona padding ao redor do conteúdo */
+    font-size: 1.2rem; /* Define o tamanho da fonte */
+    color: #555; /* Cor do texto */
+    font-style: italic; /* Opcional: deixa o texto em itálico */
+}
 
