@@ -1,3 +1,11 @@
+/* Reseta as margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Layout geral */
 html, body {
     margin: 0;
     padding: 0;
@@ -15,6 +23,7 @@ body {
     min-height: 100vh; /* Garante que o body ocupa pelo menos 100% da altura da viewport */
 }
 
+/* Estilo da navbar */
 header {
     background-color: #333;
     color: #fff;
@@ -48,22 +57,92 @@ header {
     color: #00bcd4;
 }
 
+/* Estilo principal */
 main {
-    flex: 1; /* Faz com que o main ocupe o espaço restante disponível */
+    flex: 1;
     padding: 20px;
 }
 
+/* Estilo do footer */
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px 0;
 }
-#home{
-    text-align: center;
+
+/* Responsividade para celulares e telas pequenas */
+@media screen and (max-width: 768px) {
+    /* Navbar para telas menores */
+    .navbar .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    /* Ajuste para os barbeiros */
+    .barbeiros-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .barbeiro {
+        max-width: 300px;
+        width: 100%; /* Flexível para tela menor */
+    }
+
+    .logo-giratoria {
+        width: 70px; /* Reduz o tamanho da logo no celular */
+    }
 }
 
-/*SOBRE OS BARBEIROS*/
+@media screen and (max-width: 480px) {
+    /* Ajustes para telas muito pequenas (smartphones) */
+    header {
+        text-align: center;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+    }
+
+    /* Ajuste nas imagens dos barbeiros */
+    .barbeiro img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 50%; /* Mantém o formato circular */
+    }
+
+    /* Ajuste de título */
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    .barbeiro h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    /* Ajuste no footer */
+    footer {
+        padding: 20px 0;
+    }
+}
+
+/* SOBRE OS BARBEIROS */
 #barbeiros {
     padding: 60px 20px;
     background: #f4f4f4;
@@ -90,15 +169,15 @@ footer {
     padding: 20px;
     max-width: 250px;
     text-align: center;
-    flex: 1 1 200px; /* Flexível para se ajustar em várias telas */
+    flex: 1 1 200px;
 }
 
 .barbeiro img {
     width: 100%;
     height: auto;
-    border-radius: 10%; /* Deixa a imagem em formato circular */
+    border-radius: 10%;
     margin-bottom: 15px;
-    object-fit: cover; /* Faz com que a imagem se ajuste à caixa sem distorcer */
+    object-fit: cover;
 }
 
 .barbeiro h3 {
@@ -109,10 +188,8 @@ footer {
 .barbeiro p {
     color: #555;
 }
-#mensagem-motivacional{
-    text-align: center;
-}
-/*FEEDBACK*/
+
+/* FEEDBACK */
 #feedback {
     padding: 60px 20px;
     background: #f4f4f4;
@@ -167,12 +244,14 @@ footer {
 #form-feedback .button:hover {
     background-color: #474f50;
 }
-/*ATIVAR A PAGINA ONDE ESTÁ*/
+
+/* ATIVAR A PAGINA ONDE ESTÁ */
 .nav-links a.active {
-    color: #00bcd4; /* Cor de destaque */
-    font-weight: bold; /* Deixa o texto mais destacado */
-    border-bottom: 2px solid #00bcd4; /* Adiciona uma linha embaixo do link */
+    color: #00bcd4;
+    font-weight: bold;
+    border-bottom: 2px solid #00bcd4;
 }
+
 /* Estilo para a página de portfólio */
 #portfolio {
     padding: 60px 20px;
@@ -200,15 +279,15 @@ footer {
     padding: 20px;
     max-width: 250px;
     text-align: center;
-    flex: 1 1 200px; /* Flexível para se ajustar em várias telas */
+    flex: 1 1 200px;
 }
 
 .trabalho img {
     width: 100%;
     height: auto;
-    border-radius: 8px; /* Mantém as imagens com bordas arredondadas */
+    border-radius: 8px;
     margin-bottom: 15px;
-    object-fit: cover; /* Ajusta a imagem sem distorcer */
+    object-fit: cover;
 }
 
 .trabalho h3 {
@@ -219,7 +298,8 @@ footer {
 .trabalho p {
     color: #555;
 }
-/*SERVIÇOS*/
+
+/* SERVIÇOS */
 #servicos {
     padding: 40px 20px;
     background: #f4f4f4;
@@ -246,7 +326,7 @@ footer {
     padding: 20px;
     max-width: 250px;
     text-align: center;
-    flex: 1 1 200px; /* Flexível para se ajustar em várias telas */
+    flex: 1 1 200px;
 }
 
 .servico h3 {
@@ -257,9 +337,10 @@ footer {
 .servico .preco {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #00bcd4; /* Cor para destacar o preço */
+    color: #00bcd4;
 }
-/*AGENDAMENTO*/
+
+/* AGENDAMENTO */
 #agendar {
     padding: 60px 20px;
     background: #f4f4f4;
@@ -295,43 +376,4 @@ footer {
     transition: border-color 0.3s ease;
 }
 
-#form-agendamento select:focus,
-#form-agendamento input:focus {
-    border-color: #35c9dd;
-}
-
-#form-agendamento .button {
-    background-color: #a8e9f1;
-    color: white;
-    border: none;
-    padding: 12px;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#form-agendamento .button:hover {
-    background-color: #474f50;
-}
-
-#confirmacao {
-    margin-top: 20px;
-    color: green;
-    font-weight: bold;
-}
-
-@keyframes girar {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-.logo-giratoria {
-    animation: girar 2s linear infinite; /* Gira continuamente */
-    width: 90px; /* Ajuste o tamanho, se necessário */
-}
+#form-agendamento select:focus
