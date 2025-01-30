@@ -423,4 +423,7 @@ footer {
 .center{
     text-align: center;
      }
+#home h3 {
+    margin-top: -10px; /* Ajuste o valor para trazer o texto mais para cima */
+}
 
