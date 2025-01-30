@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Atendimento - Barbearia Portes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="imagens/icon (2).png" alt="Logo da Barbearia Portes">
+                <p class="logo-nome">BARBEARIA PORTES</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="agendar.html" class="active">Agendar Atendimento</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="agendar">
+            <h2>Agendar Atendimento</h2>
+            <form id="form-agendamento">
+                <label for="servico">Escolha o Serviço:</label>
+                <select id="servico" name="servico" required>
+                    <option value="">Selecione...</option>
+                    <option value="corte-simples">BARBA - R$ 19,90</option>
+                    <option value="barba">BARBOTERAPIA - 39,90 R$</option>
+                    <option value="combo-corte-barba">CABELO + BARBA - R$ 51,80</option>
+                    <option value="tratamento-capilar">CORTE + PIGMENTAÇÃO - R$ 51,80</option>
+                    <option value="tratamento-capilar">CORTE DISFARÇADO - R$ 31,90</option>
+                    <option value="tratamento-capilar">CORTE INFANTIL - R$ 35,90</option>
+                    <option value="tratamento-capilar">CORTE SIMPLES - R$ 19,90</option>
+                    <option value="tratamento-capilar">FREESTYLE - R$ 9,90</option>
+                    <option value="tratamento-capilar">LIMPEZA DE PELE - R$ 19,90</option>
+                    <option value="tratamento-capilar">NEVOU - R$ 69,90</option>
+                    <option value="tratamento-capilar">NEVOU COMPLETO (+CORTE E SONBRACELHA) - R$ 84,90</option>
+                    <option value="tratamento-capilar">PIGMENTAÇÃO - R$ 19,90</option>
+                    <option value="tratamento-capilar">PEZINHO - R$ 15,90</option>
+                    <option value="tratamento-capilar">REFLEXO - R$ 39,90</option>
+                    <option value="tratamento-capilar">SONBRACELHA - R$ 9,90</option>
+                </select>
+
+                <label for="data">Escolha o Dia:</label>
+                <input type="date" id="data" name="data" required>
+
+                <label for="horario">Escolha o Horário:</label>
+                <select id="horario" name="horario" required>
+                    <option value="">Selecione...</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="15:00">16:00</option>
+                    <option value="15:00">17:00</option>
+                    <option value="15:00">18:00</option>
+                    <option value="15:00">19:00</option>
+                </select>
+
+                <button type="submit" class="button">Agendar</button>
+            </form>
+            <p id="confirmacao"></p>
+        </section>
+    </main>
+    <footer>
+        <p>2024 Barbearia Portes. &copy; Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
