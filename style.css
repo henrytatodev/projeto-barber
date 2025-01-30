@@ -380,9 +380,17 @@ footer {
 
 
 #home {
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    height: 100vh; /* Ocupa 100% da altura da viewport */
     text-align: center; /* Centraliza o texto horizontalmente */
-    padding: 40px 20px; /* Adiciona padding ao redor do conteúdo */
+    padding: 40px 20px; /* Adiciona padding */
 }
+
+
 
 #home h1 {
     font-size: 2.5rem; /* Tamanho do título */
@@ -397,10 +405,19 @@ footer {
     
 }
 #mensagem-motivacional {
-    text-align: center; /* Centraliza o texto horizontalmente */
-    padding: 40px 20px; /* Adiciona padding ao redor do conteúdo */
-    font-size: 1.2rem; /* Define o tamanho da fonte */
+  #mensagem-motivacional {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    font-size: 1.2rem; /* Tamanho da fonte */
     color: #555; /* Cor do texto */
-    font-style: italic; /* Opcional: deixa o texto em itálico */
+    font-style: italic; /* Texto em itálico para dar um efeito especial */
+    padding: 40px 20px; /* Adiciona padding ao redor do conteúdo */
+    text-align: center; /* Centraliza o texto dentro do container */
+    max-width: 800px; /* Limita a largura para manter o texto legível */
+    margin: 0 auto; /* Centraliza a seção */
+}
+
 }
 
