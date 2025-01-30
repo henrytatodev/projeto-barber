@@ -61,6 +61,7 @@ header {
 main {
     flex: 1;
     padding: 20px;
+    text-align: center;
 }
 
 /* Estilo do footer */
@@ -384,7 +385,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center; /* Centraliza o conteúdo verticalmente */
-    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    
     height: 100vh; /* Ocupa 100% da altura da viewport */
     text-align: center; /* Centraliza o texto horizontalmente */
     padding: 40px 20px; /* Adiciona padding */
@@ -414,7 +415,7 @@ footer {
     color: #555; /* Cor do texto */
     font-style: italic; /* Texto em itálico para dar um efeito especial */
     padding: 40px 20px; /* Adiciona padding ao redor do conteúdo */
-    text-align: center; /* Centraliza o texto dentro do container */
+    
     max-width: 800px; /* Limita a largura para manter o texto legível */
     margin: 0 auto; /* Centraliza a seção */
 }
