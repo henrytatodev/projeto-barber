@@ -419,5 +419,7 @@ footer {
     margin: 0 auto; /* Centraliza a seção */
 }
 
-}
+.center{
+    text-align: center;
+     }
 
